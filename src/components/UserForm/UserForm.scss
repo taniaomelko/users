@@ -1,0 +1,64 @@
+.add-user-form-wrapper {
+  padding: 20px 0;
+  @media (min-width: 768px) {
+    padding: 20px 40px;
+  }
+  @media (min-width: 1024px) {
+    padding: 20px 100px;
+  }
+}
+.add-user-title {
+  text-align: center;
+}
+.add-user-form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  .label-text {
+    margin-bottom: 5px;
+    font-size: 16px;
+    font-weight: 500;
+  }
+  input:not([type=file]) {
+    padding: 8px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    width: 100%;
+  }
+  .input-wrapper {
+    margin-bottom: 6px;
+    position: relative;
+    input {
+      padding-right: 36px;
+    }
+  }
+  .remove-item {
+    position: absolute;
+    right: 0;
+    top: 0;
+    height: 100%;
+  }
+  .remove-item,
+  .add-item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 4px;
+    cursor: pointer;
+    &:hover {
+      svg {
+        opacity: 0.6;
+      }
+    }
+    svg {
+      transition: opacity 0.3s;
+    }
+  }
+  .add-item {
+    width: 40px;
+    height: 32px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+}
