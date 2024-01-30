@@ -73,7 +73,7 @@ export const UserForm: React.FC = () => {
           <div className="label-text">
             Last name:
           </div>
-          <input type="text" id="form-last-name" name="last_name" value={last_name} onChange={handleChange} required={false} />
+          <input type="text" id="form-last-name" name="last_name" value={last_name} onChange={handleChange} required />
         </label>
 
         <label htmlFor="form-email">
